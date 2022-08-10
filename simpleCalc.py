@@ -1,4 +1,3 @@
-import pyinputplus as inp
 import re
 
 print('''Simple Python Calc
@@ -9,16 +8,34 @@ multiplication, modulo, and powers.
 Future updates will hopefully include actual equations and such!
 
 ''')
+def calc():
 
-print("Currently only supports equations with two values and one operator.")
-user_string = input("Input your equation: ")
+    user_string = input("Input your equation: ")
+    user_string = user_string.split(' ')
+    x, y = user_string[0], user_string[-1]
+    ans = 0
 
-user_string = user_string.split(' ')
 
-if len(user_string) != 3:
-    print("invalid input, try again")
-    exit()
+    if len(user_string) != 3:
+        print("invalid input, try again")
+        exit()
 
-op = user
-if user_string[1] == '=-*/':
-    if user_string
+    op = user_string[1]
+    if '+-*/^%' in op:
+
+        if op == '+':
+            ans = x + y
+        elif op == '-':
+            ans = x - y
+        elif op == '*':
+            ans = x * y
+        elif op == '/':
+            ans = x / y
+        elif op == '^':
+            ans = x ** y
+        elif op == '%':
+            ans = x % y
+
+        return ans
+
+print(calc())
