@@ -2,6 +2,8 @@ made by @cdkulat on github, @christiankulat on twitter
 
 This python calc is pretty barebones but it sure does do some math.
 
-Upon being finished, it will be able to perform addition, subtraction, multiplication, division, and exponents for up to 3 values of a time.
+Still a work-in-progress - features that I might implement maybe?
 
-Any new features being added will be listed in future READMEs!
+    - Basic calculator UI
+    - Ability to be called with params
+    - Ability to handle longer expressions than what is originally able
